@@ -15,12 +15,12 @@ class CreateArticlesTable extends Migration
     {
         Schema::create('articles', function (Blueprint $table) {
             $table->id();
-			$table->timestamps();
-			$table->string('name');
-			$table->foreignId('category_id');
-			$table->string('image');
-			$table->string('summary');
-			$table->string('description');
+            $table->timestamps();
+            $table->string('name');
+            $table->foreignId('category_id');
+            $table->string('image');
+            $table->string('summary');
+            $table->string('description');
         });
     }
 

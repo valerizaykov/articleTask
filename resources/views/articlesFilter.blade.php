@@ -15,16 +15,14 @@
                     <table>
                         <tr>
                             <td>
-                                <a class="btn btn-primary" href="{{ url('articles/create') }}">Add new</a>
+                                <a class="btn btn-primary" href="{{ url('article/create') }}">Add new</a>
                             </td>
                             <td>
                                 <form  action="{{ url('/article') }}" method="get">
                                     <input type="text" name="searchValue" id="searchValue"
                                         placeholder="Search by category ..." >
                                     <input type="submit" name="submit" value="ok" id="submit" class="btn btn-primary">
-                                    <!--<select id="criteria" name="criteria">
-                                        <option value="searchByCat">search by category</option>
-                                    </select>-->
+                                   
                                 </form>
                             </td>
                         </tr>

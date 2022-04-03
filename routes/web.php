@@ -18,6 +18,10 @@ Route::get('/', function () {
 });
 
 Route::get('/article', 'articleController@index');
+Route::get('/article/create', 'articleController@create');
+Route::post('/article/articleStore', 'articleController@store');
+Route::get('/category/create', 'categoryController@create');
+Route::post('/category/Store', 'categoryController@store');
 Route::get('/article/{id}/show', 'articleController@show');
 Auth::routes();
 
